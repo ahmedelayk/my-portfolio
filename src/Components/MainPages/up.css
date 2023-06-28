@@ -1,0 +1,21 @@
+.up {
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    padding: 14px;
+    position: fixed;
+    bottom: 20px;
+    right: -100%;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+.up:hover {
+    background-color: #313353;
+}
+
+.up.show {
+    right: 20px;
+}

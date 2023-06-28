@@ -9,12 +9,7 @@
     text-align: center;
 }
 
-.footer>.container>p>span:first-child {
-    background: -webkit-linear-gradient(45deg, var(--gradientColor), var(--gradientColor), var(--mainColor));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+.footer>.container>p>span:first-child,
 .footer>.container>p>span:nth-child(2) {
     background: -webkit-linear-gradient(45deg, var(--gradientColor), var(--gradientColor), var(--mainColor));
     -webkit-background-clip: text;
@@ -22,6 +17,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.footer>.container>p>span:first-child::selection,
+.footer>.container>p>span:nth-child(2)::selection {
+    background-color: rgba(0, 0, 0, 30%);
+}
 .footer>.container>p>span:nth-child(3) {
     color: #f00 ;
 }

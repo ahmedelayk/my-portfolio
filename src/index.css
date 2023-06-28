@@ -69,6 +69,10 @@ ul {
     }
 }
 
+::selection {
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+}
 /* End of Global Rules */
 
 
