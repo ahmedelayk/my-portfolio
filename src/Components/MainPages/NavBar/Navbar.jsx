@@ -21,9 +21,9 @@ const Navbar = () => {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'><a href="#home">Home</a></li>
                         <li className='nav-item'><a href="#about">About</a></li>
-                        <li className='nav-item'><a href="#Skills">Skills</a></li>
-                        <li className='nav-item'><a href="#projrcts">Projects</a></li>
-                        <li className='nav-item'><a href="#contactus">Contact Us</a></li>
+                        <li className='nav-item'><a href="#skills">Skills</a></li>
+                        <li className='nav-item'><a href="#projects">Projects</a></li>
+                        <li className='nav-item'><a href="#contact">Contact</a></li>
                     </ul>
                     <ul className="social-links">
                         <li><a href="https://www.linkedin.com/in/ahmed-elayek/" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></li>

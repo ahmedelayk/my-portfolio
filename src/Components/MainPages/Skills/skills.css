@@ -3,6 +3,11 @@
     padding-bottom: var(--sectionPadding);
 }
 
+.skills>.container>h3,
+.skills>.container>p {
+    text-align: center;
+}
+
 .skills .tech-skills {
     margin-top: 75px;
     margin-bottom: 75px;

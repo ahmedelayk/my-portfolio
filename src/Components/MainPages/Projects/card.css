@@ -1,0 +1,57 @@
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* width: 300px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card>.card-image>img {
+    width: 100%;
+}
+
+.card>.card-content {
+    padding: 10px 20px;
+}
+
+.card>.card-content>h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.card>.card-content>p:nth-child(2) {
+    color: var(--paragraphColor);
+    font-size: .8rem;
+}
+.card>.card-content>p:nth-child(3) {
+    color: var(--paragraphColor);
+    font-size: .9rem;
+    margin-top: 5px;
+}
+.card>.card-content>p:nth-child(3)>span {
+    color: var(--secondColor);
+    font-size: 1rem;
+}
+.card>.card-content>.project-links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.card>.card-content>.project-links>.live-preview,
+.card>.card-content>.project-links>.github {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.card>.card-content>.project-links>.live-preview,
+.card>.card-content>.project-links>.github {
+    font-size: .8rem;
+    color: var(--secondColor);
+    transition: var(--transition-time);
+    font-weight: 500;
+}
+.card>.card-content>.project-links>.live-preview:hover,
+.card>.card-content>.project-links>.github:hover {
+    color: var(--gradientColor);
+    transform: scale(1.1);
+}

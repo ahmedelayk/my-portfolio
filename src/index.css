@@ -2,8 +2,14 @@
 
 :root {
     --mainColor: #00C0FD;
+    /* --mainColor: #191919; */
+    --mainColorDarkMode: #191919;
     --secondColor: #42446E;
+    /* --secondColor: #CCCCCC; */
+    --secondColorDarkMode: #CCCCCC;
     --paragraphColor: #666666;
+    /* --paragraphColor: #A7A7A7; */
+    --paragraphColorDarkMode: #A7A7A7;
     --gradientColor: #E70FAA;
     --sectionPadding: 70px;
     --transition-time: .2s;
@@ -20,6 +26,7 @@
 
 html {
     scroll-behavior: smooth;
+    /* background-color: var(--mainColor); */
 }
 
 body {
