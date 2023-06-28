@@ -1,6 +1,7 @@
-import About from './Components/MainPages/About';
-import Header from './Components/MainPages/Header/Header';
 import Navbar from './Components/MainPages/NavBar/Navbar';
+import Header from './Components/MainPages/Header/Header';
+import About from './Components/MainPages/About/About';
+import Skills from './Components/MainPages/Skills/Skills';
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Navbar />
             <Header />
             <About />
+            <Skills />
         </>
     );
 }

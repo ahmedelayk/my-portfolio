@@ -5,7 +5,7 @@
     --secondColor: #42446E;
     --paragraphColor: #666666;
     --gradientColor: #E70FAA;
-    --sectionPadding: 40px;
+    --sectionPadding: 70px;
     --transition-time: .2s;
 }
 
@@ -63,3 +63,37 @@ ul {
 }
 
 /* End of Global Rules */
+
+
+.header-text {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--secondColor);
+}
+
+@media (max-width: 992px) {
+    .header-text {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+.paragraph-text{
+    font-size: 1.2rem;
+    color: var(--paragraphColor);
+}
+@media (max-width: 992px) {
+   .paragraph-text{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+   .paragraph-text{
+        font-size: .9rem;
+    }
+}

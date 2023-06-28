@@ -1,0 +1,25 @@
+.skills {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.skills .tech-skills {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    row-gap: 75px;
+}
+
+
+.skills .tech-skills>.tech-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .skills .tech-skills {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

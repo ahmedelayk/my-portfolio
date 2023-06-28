@@ -3,7 +3,7 @@ import personalImg from "../../../assets/Personal_.jpg";
 // Styling
 import "./header.css"
 
-export default function Header() {
+const Header = () => {
     return (
         <>
             <section id="home" className="home">
@@ -21,3 +21,5 @@ export default function Header() {
         </>
     )
 }
+
+export default Header;

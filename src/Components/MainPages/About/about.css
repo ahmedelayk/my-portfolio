@@ -1,0 +1,108 @@
+.about {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.about .education {
+    margin-top: 40px;
+}
+
+.about .education>h3:first-child {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--secondColor);
+}
+
+.about .education>.college {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .education>.college>.college-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about .education>.college>.college-text>span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.about .education>.college>.date {
+    font-size: 1rem;
+    color: var(--paragraphColor);
+}
+
+.about .education>.major {
+    color: var(--paragraphColor);
+}
+
+.about .education>.grade {
+    color: var(--paragraphColor);
+}
+
+@media (max-width: 992px) {
+
+    .about .education {
+        margin-top: 30px;
+    }
+
+    .about .education>h3:first-child {
+        font-size: 1.7rem;
+    }
+
+    .about .education>.college>.college-text {
+        font-size: 1rem;
+    }
+
+    .about .education>.college>.date {
+        font-size: .9rem;
+    }
+
+    .about .education>.major {
+        font-size: .9rem;
+    }
+
+    .about .education>.grade {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding-top: 0;
+        padding-bottom: var(--sectionPadding);
+    }
+
+    .about .education>h3:first-child {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .about .education>.college {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .about .education>.college>.college-text {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .about .education>.college>.college-text>span {
+        font-weight: 400;
+    }
+
+    .about .education>.college>.date {
+        font-size: .8rem;
+    }
+
+    .about .education>.major {
+        font-size: .8rem
+    }
+
+    .about .education>.grade {
+        font-size: .8rem
+    }
+}

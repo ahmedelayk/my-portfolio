@@ -1,7 +1,4 @@
 .home {
-    /* margin-top: 110px;
-    margin-bottom: var(--sectionPadding);
-    height: calc(100vh - 150px); */
     height: 100vh;
 }
 
@@ -68,6 +65,7 @@ header {
     header {
         flex-direction: column-reverse;
         justify-content: center;
+        gap: 1rem;
     }
 
     .image>img {
