@@ -76,6 +76,9 @@ ul {
     margin-bottom: 20px;
     font-size: 2rem;
     color: var(--secondColor);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: 4px;
 }
 
 @media (max-width: 992px) {

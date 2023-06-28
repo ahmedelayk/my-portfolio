@@ -12,6 +12,7 @@
     margin-bottom: 20px;
     font-size: 2rem;
     color: var(--secondColor);
+    /* text-align: center; */
 }
 
 .about .education>.college {

@@ -19,8 +19,14 @@
 
 .skills .tech-skills>.tech-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+}
+.skills .tech-skills>.tech-image>p {
+    color: var(--paragraphColor);
+    text-transform: uppercase;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

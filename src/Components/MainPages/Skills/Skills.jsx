@@ -24,39 +24,51 @@ const Skills = () => {
                     <div className="tech-skills">
                         <div className="tech-image">
                             <img src={htmlImg} alt="html5" />
+                            <p>HTML5</p>
                         </div>
                         <div className="tech-image">
                             <img src={CSS3} alt="CSS3" />
+                            <p>CSS3</p>
                         </div>
                         <div className="tech-image">
                             <img src={JS} alt="JS" />
+                            <p>JavaScript</p>
                         </div>
                         <div className="tech-image">
                             <img src={Bootstrap} alt="Bootstrap" />
-                        </div>
-                        <div className="tech-image">
-                            <img src={Sass} alt="Sass" />
+                            <p>BootStrap</p>
                         </div>
                         <div className="tech-image">
                             <img src={tailwindcss} alt="tailwindcss" />
+                            <p>Tailwindcss</p>
+                        </div>
+                        <div className="tech-image">
+                            <img src={Sass} alt="Sass" />
+                            <p>Sass</p>
                         </div>
                         <div className="tech-image">
                             <img src={react} alt="React" />
+                            <p>React</p>
                         </div>
                         <div className="tech-image">
                             <img src={redux} alt="redux" />
+                            <p>Redux</p>
                         </div>
                         <div className="tech-image">
                             <img src={Angular} alt="Angular" />
+                            <p>Angular</p>
                         </div>
                         <div className="tech-image">
                             <img src={Git} alt="Git" />
+                            <p>Git</p>
                         </div>
                         <div className="tech-image">
                             <img src={Github} alt="Github" />
+                            <p>Github</p>
                         </div>
                         <div className="tech-image">
                             <img src={Figma} alt="Figma" />
+                            <p>Figma</p>
                         </div>
                     </div>
                 </div>

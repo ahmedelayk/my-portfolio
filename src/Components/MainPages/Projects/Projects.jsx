@@ -3,7 +3,7 @@ import "./projects.css";
 // Components
 import CardProject from "./CardProject";
 // Images
-import proj1 from "../../../assets/Personal_.jpg"
+import proj1 from "../../../assets/card.png"
 import proj2 from "../../../assets/Personal_Img.jpeg"
 
 const Projects = () => {
