@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import {FaBars, FaTimes} from "react-icons/fa"
 // Styling
 import "./navbar.css";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -21,13 +21,18 @@ const Navbar = () => {
     const skills = document.getElementById("skills");
     const projects = document.getElementById("projects");
     const contact = document.getElementById("contact");
-    window.onscroll = () => {
-        (window.scrollY >= home.offsetTop && window.scrollY < home.offsetTop + home.offsetHeight)?setHomeOffset(true): setHomeOffset(false);
-        (window.scrollY >= about.offsetTop && window.scrollY < about.offsetTop + about.offsetHeight)?setAboutOffset(true): setAboutOffset(false);
-        (window.scrollY >= skills.offsetTop && window.scrollY < skills.offsetTop + skills.offsetHeight)?setSkillsOffset(true): setSkillsOffset(false);
-        (window.scrollY >= projects.offsetTop && window.scrollY < projects.offsetTop + projects.offsetHeight -1)?setProjectsOffset(true): setProjectsOffset(false);
-        (window.scrollY >= contact.offsetTop -1 && window.scrollY < contact.offsetTop + contact.offsetHeight)?setContactOffset(true): setContactOffset(false);
-    }
+    useEffect(()=>{
+        if(home && about && skills && projects && contact){
+            window.onscroll = () => {
+                (window.scrollY >= home?.offsetTop && window.scrollY < home?.offsetTop + home?.offsetHeight)?setHomeOffset(true): setHomeOffset(false);
+                (window.scrollY >= about?.offsetTop && window.scrollY < about?.offsetTop + about?.offsetHeight)?setAboutOffset(true): setAboutOffset(false);
+                (window.scrollY >= skills?.offsetTop && window.scrollY < skills?.offsetTop + skills?.offsetHeight)?setSkillsOffset(true): setSkillsOffset(false);
+                (window.scrollY >= projects?.offsetTop && window.scrollY < projects?.offsetTop + projects?.offsetHeight -1)?setProjectsOffset(true): setProjectsOffset(false);
+                (window.scrollY >= contact?.offsetTop -1 && window.scrollY < contact?.offsetTop + contact?.offsetHeight)?setContactOffset(true): setContactOffset(false);
+            }
+        }
+    },[about?.offsetHeight, about?.offsetTop, contact?.offsetHeight, contact?.offsetTop, home?.offsetHeight, home?.offsetTop, projects?.offsetHeight, projects?.offsetTop, skills?.offsetHeight, skills?.offsetTop])
+
     return (
         <>
             <section className="navbar">

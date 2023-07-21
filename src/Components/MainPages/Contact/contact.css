@@ -78,7 +78,6 @@
 }
 
 .contact-form>input[type="submit"] {
-    width: 20%;
     align-self: center;
     cursor: pointer;
     background-color: var(--mainColor);
